@@ -1,0 +1,27 @@
+body{
+    padding: 4px;
+}
+
+.title{
+    font-weight: bold;
+    color: rgb(18, 158, 223);
+}
+
+.text{
+    font-size: 16pt;
+    color: black;
+    font-size: small;
+}
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.icon-text svg {
+    width: 24px;  /* กำหนดความกว้างเท่ากัน */
+    height: 24px; /* กำหนดความสูงเท่ากัน */
+    vertical-align: middle; /* จัดแนวกลางกับข้อความ */
+    margin-right: 5px; /* เพิ่มช่องว่างระหว่างไอคอนกับข้อความ */
+}
+
