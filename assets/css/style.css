@@ -19,9 +19,9 @@ body{
 }
 
 .icon-text svg {
-    width: 24px;  /* กำหนดความกว้างเท่ากัน */
-    height: 24px; /* กำหนดความสูงเท่ากัน */
-    vertical-align: middle; /* จัดแนวกลางกับข้อความ */
-    margin-right: 5px; /* เพิ่มช่องว่างระหว่างไอคอนกับข้อความ */
+    width: 24px;
+    height: 24px; 
+    vertical-align: middle; 
+    margin-right: 5px; 
 }
 
