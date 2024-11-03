@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+.profile-pic {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.section {
+    margin-bottom: 20px;
+}
+.social-links a {
+    margin-right: 10px;
+    color: #0077b5;
+    text-decoration: none;
+}
