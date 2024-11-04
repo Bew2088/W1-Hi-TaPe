@@ -1,27 +1,129 @@
-body{
+/* Global Styles */
+body {
     padding: 4px;
+    font-family: Arial, sans-serif;
 }
 
-.title{
-    font-weight: bold;
-    color: rgb(18, 158, 223);
-}
-
-.text{
-    font-size: 16pt;
-    color: black;
-    font-size: small;
-}
-.icon-text {
+.wrapper {
     display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Navigation */
+.main-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.main-nav a {
+    background-color: aliceblue;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 0;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    transition: all 0.5s ease;
+}
+
+.main-nav a:hover {
+    background-color: #222222;
+    color: aliceblue;
+}
+
+/* Top Container */
+.top-container {
+    display: grid;
+    grid-template-areas: 
+        "hero-section hero-section top-box-a"
+        "hero-section hero-section top-box-b";
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.hero-section {
+    grid-area: hero-section;
+    min-height: 400px;
+    background-image: url('https://th.bing.com/th/id/OIP.cQ3-GvHI8klFG1GkEfXg6AHaD4?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.top-box {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 8px; 
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding: 20px;
 }
 
-.icon-text svg {
-    width: 24px;
-    height: 24px; 
-    vertical-align: middle; 
-    margin-right: 5px; 
+.top-box-a, .top-box-b {
+    font-size: 2rem;
 }
 
+/* Boxes Section */
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* Info Section */
+.info {
+    background-color: aliceblue;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.info img {
+    width: 100px;
+}
+
+.info div {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222222;
+    color: aliceblue;
+    font-size: 1rem;
+}
